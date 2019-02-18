@@ -1,0 +1,237 @@
+@co: rgb(192,112,66);
+a{
+  text-decoration: none;
+}
+body{
+  background-color: rgb(245,245,245);
+}
+.none{
+  display: none;
+}
+.sidebarStyle{
+  color: @co;
+  padding-left: 1.5em;
+  border: solid @co;
+}
+nav.navbar-default {
+  background-color: @co;
+  padding-bottom: .5em;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+
+  a.navbar-brand {
+    color: white;
+
+    &.sumMoney {
+      float: right;
+    }
+    &.yushanhouse{
+      font-size: 2em;
+      padding-left: 40%;
+    }
+
+    img {
+      width: 1.5em;
+      vertical-align: middle;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+div.topBarStyle{
+  height:6.5em;
+}
+
+div.sideBarLeft {
+  width: 13.5em;
+  background:url(../img/entry.jpg) 0 12em;
+  padding: 0;
+  height: 80em;
+  margin-top: -2.3em;
+  position: fixed;
+  z-index: 998;
+  a {
+    background:url(../img/entry.jpg);
+    border: none;
+    padding: 1em;
+    color: white;
+    text-indent: 0.2em;
+    font-size: 1.2em;
+
+    &:hover{
+      .sidebarStyle;
+    };
+    &:focus{
+      border-left: 0.5em solid @co;
+      font-weight:550;
+      padding-left: 2em;
+    }
+  }
+}
+.active{
+  border-left: 0.5em solid @co;
+  font-weight:550;
+  padding-left: 2em;
+  border: solid;
+}
+
+.sideBarRight{
+  margin-left: 13.8em;
+}
+.foodName {
+  margin: 0;
+}
+.tableIndex{
+  width:4em;
+  height:1.8em;
+  margin-left:1%;
+  padding-left:1%;
+}
+input[type="text"]{
+  margin-left: 40%;
+  padding-left: .5em;
+}
+.foodContent{
+  color: yellowgreen;
+  padding-left:34%;
+  margin-bottom:1em;
+  font-size:2em;
+  font-weight:500;
+}
+p.discount {
+  margin: 2.5em 0;
+  color: @co;
+  &~p{
+   margin-bottom: 2em;
+  }
+}
+
+p.minus_plus {
+  text-align: right;
+  font-size: 2.3em;
+  span.minus,
+  span.plus{
+    cursor: pointer;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.15em;
+    text-align: center;
+    border: 1.8px solid;
+    border-radius: 50%;
+    color:@co;
+    font-size: 1.3em;
+    vertical-align: middle;
+    &:active{
+      font-weight:bold;
+      border: 3px solid;
+    }
+  };
+  span.minus{
+    display: none;
+  }
+}
+
+div.thumbnail img {
+  height: 17em;
+  width: 20em;
+}
+
+a.btn{
+  font-size: .9em;
+  position:fixed;
+  right:.5em;
+  bottom:8em;
+}
+div.modal-dialog{
+  margin-top: 5em;
+}
+//弹出模态框的样式
+table{
+  width: 100%;
+  margin-bottom: 1em;
+}
+td,th{
+  text-align: center;
+   padding: .3em 0;
+}
+
+@media only screen and(max-width:960px){
+  input[type="text"]{
+    margin-left: 10%;
+  }
+}
+
+@media only screen and(max-width:768px){
+  p.foodContent{
+    padding-left:0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width:612px){
+  nav.navbar-default{
+    height: 4.5em;
+    a.sumMoney{
+      font-size: 1em;
+    }
+    a.yushanhouse{
+      position: absolute;
+      left: 1em;
+      font-size: .1em;
+      width: 10em;
+      span{
+        width: 3em;
+        font-size: .8em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:500px){
+ nav.navbar-default{
+   height: 4.5em;
+   a.sumMoney{
+     font-size: 1em;
+   }
+ }
+ div.sideBarLeft{
+   width:7.5em;
+   a{
+     font-size: 1em;
+   }
+   a:focus{
+         padding-left: 1em;
+       }
+ }
+ a.yushanhouse{
+   font-size: .1em;
+   width: 10em;
+   span{
+     position: absolute;
+     left: 3.5em;
+     font-size: .5em;
+   }
+ }
+ a.btn{
+   width: 6.5em;
+   position:fixed;
+   z-index: 1000;
+   left:.5em;
+ }
+ .sideBarRight{
+   margin-left: 7.5em;
+ }
+ input[type="text"]{
+   width: 7.5em;
+   margin-left: 0;
+  }
+ div.sideBarLeft{
+ background:url(../img/entry.jpg) 0 10em;
+ }
+}

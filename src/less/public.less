@@ -1,0 +1,306 @@
+@col: #fff;
+@display: inline-block;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 300px;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*公共样式，头部*/
+
+.publicHeader {
+    height: 68px;
+    line-height: 68px;
+    font-size: 14px;
+    background: rgb(192, 112, 66);
+    h1 {
+        float: left;
+        color: @col;
+        font-size: 22px;
+        margin-left: 60px;
+        text-shadow: 2px 1px #000;
+    }
+}
+
+.publicHeaderR {
+    float: right;
+    color: @col;
+    margin-right: 50px;
+    p {
+        display: @display;
+        font-weight: bold;
+    }
+    a {
+        width: 50px;
+        height: 28px;
+        display: @display;
+        border: 1px solid #679e43;
+        background: #87c212;
+        line-height: 28px;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: bold;
+        color: @col;
+        &:hover {
+            border: 1px solid #192b02;
+            border-radius: 4px;
+            font-weight: bold;
+            background: #5d8410;
+        }
+    }
+}
+
+/*时间*/
+
+.publicTime {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #f0ab6b, #f3946f, #f5a563, #eeb345, #eb9b6e);
+    color: #16181a;
+}
+
+#time {
+    float: left;
+    margin-left: 60px;
+}
+
+/*公共部分主体内容*/
+
+.publicMian {
+    border-top: 1px solid #c2ccd5;
+    display: flex;
+    background: @col;
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    &>div {
+        display: none;
+        &.right {
+            display: block;
+        }
+    }
+}
+
+/*左边*/
+
+.left {
+    float: left;
+    width: 16%;
+    background: #f5f5f5;
+    height: 490px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(116, 108, 108, 0.5);
+}
+
+.leftH2 {
+    width: 140px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    color: @col;
+    background: #60b3e7;
+    margin: 10px auto;
+    box-shadow: 4px 4px rgba(212, 212, 212, 0.7);
+    span {
+        width: 10px;
+        height: 10px;
+        display: @display;
+        background: radial-gradient(#70c2f4, #3a8dc1, #035384, #4696c7, #83d1f5);
+        border-radius: 50%;
+    }
+}
+
+.span1 {
+    margin-right: 10px;
+}
+
+.span2 {
+    margin-left: 12px;
+}
+
+.list {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    li {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(116, 108, 108, 0.5);
+        &:hover {
+            background-color: #acd5f5;
+            border-radius: 4px;
+        }
+    }
+    a {
+        color: #0042a8;
+        display: @display;
+        width: 90%;
+    }
+}
+
+.active {
+    background-color: #92c609;
+    border-radius: 4px;
+}
+
+/*右边*/
+
+.right {
+    float: left;
+    width: 80%;
+    margin-right: 30px;
+}
+
+/*右边所在位置栏*/
+
+.location {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e6eaf6;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #fefefe, #ffffff, #f6fafd);
+    color: #4a4a4a;
+    padding-left: 30px;
+    p {
+        background: url("../img/home.png") 0 center no-repeat;
+        display: @display;
+        padding-left: 30px;
+    }
+    span {
+        color: #2179a9;
+        font-weight: bold;
+    }
+}
+
+/*搜索信息栏*/
+
+.search {
+    background: #f6fafd;
+    padding-left: 24px;
+    color: #000;
+    input[type='text'] {
+        width: 200px;
+        height: 30px;
+        outline: none;
+        padding-left: 10px;
+        border: 1px solid #8ab2d5;
+        border-radius: 4px;
+    }
+    input[type='button'] {
+        margin-left: 20px;
+        width: 100px;
+        padding: 0 20px;
+        height: 30px;
+        border: 1px solid #7ba92c;
+        border-radius: 4px;
+        color: @col;
+        font-weight: bold;
+        background: #87c212 url("../img/search.png") 10px center no-repeat;
+    }
+    input[type='button']:hover {
+        outline: none;
+        background-color: #5d8410;
+    }
+    a {
+        width: 80px;
+        padding-left: 40px;
+        margin: 10px 60px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #0c89de;
+        border-radius: 4px;
+        color: @col;
+        font-weight: bold;
+        background: #47acf1 url("../img/tianjia.png") 10px center no-repeat;
+        display: @display;
+        &:hover {
+            background-color: #0778c5;
+        }
+    }
+    span {
+        margin-left: 10px;
+    }
+    select {
+        margin: 10px;
+        width: 100px;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid #0c89de;
+        outline: none;
+    }
+}
+
+/*底部*/
+
+.footer {
+    height: 75px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(192, 112, 66);
+    color: @col;
+}
+
+@media only screen and (min-width:600px)and (max-width:900px) {
+    .list {
+        margin: 0 10px;
+        font-size: 11px;
+    }
+    .search {
+        input[type='text'] {
+            padding-left: 0px;
+            width: 110px;
+        }
+        span {
+            display: none;
+        }
+        select {
+            display: none;
+        }
+        a {
+            margin: 10px 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .publicHeaderR p {
+        display: none;
+    }
+    .list {
+        margin: 0 10px;
+        font-size: 11px;
+    }
+    .search {
+        input[type='text'] {
+            padding-left: 0px;
+            width: 110px;
+        }
+        span {
+            display: none;
+        }
+        select {
+            display: none;
+        }
+        a {
+            display: none;
+        }
+    }
+}

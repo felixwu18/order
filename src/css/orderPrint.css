@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+ul {
+  list-style: none;
+}
+.print_container {
+  padding: 20px;
+  width: 230px;
+  margin: 0 auto;
+}
+.section2 label {
+  display: block;
+}
+.section3 label {
+  display: block;
+}
+.section4 .total label {
+  display: block;
+}
+.section4 .other_fee {
+  border-bottom: 1px solid #dadada;
+}
+.section5 label {
+  display: block;
+}
+.printBtn{
+  margin-left: 10%;
+}
+button{
+  padding: .3em 1em;
+  margin-left: .8em;
+}

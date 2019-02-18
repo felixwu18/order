@@ -1,0 +1,230 @@
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f5f5f5;
+}
+.none {
+  display: none;
+}
+.sidebarStyle {
+  color: #c07042;
+  padding-left: 1.5em;
+  border: solid #c07042;
+}
+nav.navbar-default {
+  background-color: #c07042;
+  padding-bottom: 0.5em;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+nav.navbar-default a.navbar-brand {
+  color: white;
+}
+nav.navbar-default a.navbar-brand.sumMoney {
+  float: right;
+}
+nav.navbar-default a.navbar-brand.yushanhouse {
+  font-size: 2em;
+  padding-left: 40%;
+}
+nav.navbar-default a.navbar-brand img {
+  width: 1.5em;
+  vertical-align: middle;
+}
+nav.navbar-default a.navbar-brand span {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.topBarStyle {
+  height: 6.5em;
+}
+div.sideBarLeft {
+  width: 13.5em;
+  background: url(../img/entry.jpg) 0 12em;
+  padding: 0;
+  height: 80em;
+  margin-top: -2.3em;
+  position: fixed;
+  z-index: 998;
+}
+div.sideBarLeft a {
+  background: url(../img/entry.jpg);
+  border: none;
+  padding: 1em;
+  color: white;
+  text-indent: 0.2em;
+  font-size: 1.2em;
+}
+div.sideBarLeft a:hover {
+  color: #c07042;
+  padding-left: 1.5em;
+  border: solid #c07042;
+}
+div.sideBarLeft a:focus {
+  border-left: 0.5em solid #c07042;
+  font-weight: 550;
+  padding-left: 2em;
+}
+
+.sideBarRight {
+  margin-left: 13.8em;
+}
+.foodName {
+  margin: 0;
+}
+.tableIndex {
+  width: 4em;
+  height: 1.8em;
+  margin-left: 1%;
+  padding-left: 1%;
+}
+input[type="text"] {
+  margin-left: 40%;
+  padding-left: 0.5em;
+}
+.foodContent {
+  color: yellowgreen;
+  padding-left: 34%;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+}
+p.discount {
+  margin: 2.5em 0;
+  color: #c07042;
+}
+p.discount ~ p {
+  margin-bottom: 2em;
+}
+p.minus_plus {
+  text-align: right;
+  font-size: 2.3em;
+}
+p.minus_plus span.minus,
+p.minus_plus span.plus {
+  cursor: pointer;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.15em;
+  text-align: center;
+  border: 1.8px solid;
+  border-radius: 50%;
+  color: #c07042;
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+p.minus_plus span.minus:active,
+p.minus_plus span.plus:active {
+  font-weight: bold;
+  border: 3px solid;
+}
+p.minus_plus span.minus {
+  display: none;
+}
+div.thumbnail img {
+  height: 17em;
+  width: 20em;
+}
+a.btn {
+  font-size: 0.9em;
+  position: fixed;
+  right: 0.5em;
+  bottom: 8em;
+}
+div.modal-dialog {
+  margin-top: 5em;
+}
+table {
+  width: 100%;
+  margin-bottom: 1em;
+}
+td,
+th {
+  text-align: center;
+  padding: 0.3em 0;
+}
+@media only screen and (max-width: 960px) {
+  input[type="text"] {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  p.foodContent {
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 612px) {
+  nav.navbar-default {
+    height: 4.5em;
+  }
+  nav.navbar-default a.sumMoney {
+    font-size: 1em;
+  }
+  nav.navbar-default a.yushanhouse {
+    position: absolute;
+    left: 1em;
+    font-size: 0.1em;
+    width: 10em;
+  }
+  nav.navbar-default a.yushanhouse span {
+    width: 3em;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  nav.navbar-default {
+    height: 4.5em;
+  }
+  nav.navbar-default a.sumMoney {
+    font-size: 1em;
+  }
+  div.sideBarLeft {
+    width: 7.5em;
+  }
+  div.sideBarLeft a {
+    font-size: 1em;
+  }
+  div.sideBarLeft a:focus {
+    padding-left: 1em;
+  }
+  a.yushanhouse {
+    font-size: 0.1em;
+    width: 10em;
+  }
+  a.yushanhouse span {
+    position: absolute;
+    left: 3.5em;
+    font-size: 0.5em;
+  }
+  a.btn {
+    width: 6.5em;
+    position: fixed;
+    z-index: 1000;
+    left: 0.5em;
+  }
+  .sideBarRight {
+    margin-left: 7.5em;
+  }
+  input[type="text"] {
+    width: 7.5em;
+    margin-left: 0;
+  }
+  div.sideBarLeft {
+    background: url(../img/entry.jpg) 0 10em;
+  }
+}
+
+div.col-md-4{
+  /* opacity: 0; */
+  transition: 1s;
+  transform:scale(.5);
+}
+div.col-sm-6{
+  transform:scale(1);
+}

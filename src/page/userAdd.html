@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单后台管理系统</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!--头部-->
+    <header class="publicHeader">
+        <h1>订单后台管理系统</h1>
+        <div class="publicHeaderR">
+            <p><span id="hours"></span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
+            <a href="../index.html">退出</a>
+        </div>
+    </header>
+    <!--时间-->
+    <section class="publicTime">
+        <span id="time">2018年9月27日 11:11 星期四</span>
+    </section>
+    <!--主体内容-->
+    <section class="publicMian ">
+        <div class="left" style="display:block">
+            <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+            <nav>
+                <ul class="list">
+                    <li><a href="#">订单管理</a></li>
+                    <li><a href="#">历史订单</a></li>
+                    <li id="active"><a href="#">用户管理</a></li>
+                    <li><a href="#">密码修改</a></li>
+                    <li><a href="../index.html">退出系统</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="location">
+                <strong>你现在所在的位置是:</strong>
+                <span>用户管理页面 >> 用户添加页面</span>
+            </div>
+            <div class="userAdd">
+                <form action="#">
+                    <div>
+                        <label for="userId">用户编码：</label>
+                        <input type="text" name="userId" id="userId" />
+                        <span>*请输入用户编码，且不能重复</span>
+                    </div>
+                    <div>
+                        <label for="userName">用户名称：</label>
+                        <input type="text" name="userName" id="userName" />
+                        <span>*请输入用户名称</span>
+                    </div>
+                    <div>
+                        <label for="userpassword">用户密码：</label>
+                        <input type="text" name="userpassword" id="userpassword" />
+                        <span>*密码长度必须大于6位小于20位</span>
+
+                    </div>
+                    <div>
+                        <label for="userRemi">确认密码：</label>
+                        <input type="text" name="userRemi" id="userRemi" />
+                        <span>*请输入确认密码</span>
+                    </div>
+                    <div>
+                        <label>性别：</label>
+
+                        <select name="">
+                            <option value="man">男</option>
+                            <option value="woman">女</option>
+                        </select>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="data">年龄：</label>
+                        <input type="text" name="data" id="data" />
+                        <span>*</span>
+                    </div>
+                    <div>
+                        <label for="userphone">电话：</label>
+                        <input type="text" name="userphone" id="userphone" />
+                        <span>*</span>
+                    </div>
+                    <div>
+                        <label>用户类别：</label>
+                        <input type="radio" name="userlei" />店长
+                        <input type="radio" name="userlei" />经理
+                        <input type="radio" name="userlei" />店员
+
+                    </div>
+                    <div class="userAddBtn">
+                        <input type="button" value="保存" onclick="history.back(-1)" />
+                        <input type="button" value="返回" onclick="history.back(-1)" />
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+    <script src="../js/time.js"></script>
+
+</body>
+
+</html>

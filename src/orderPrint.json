@@ -1,0 +1,30 @@
+[   
+    {
+        "deskNumber": "1号桌",
+        "peopleNumber": 1,
+        "remark": "无备注",
+        "orderNumber": 1809210001,
+        "orderTime": "18/09/21 14:30"
+    },
+    {
+        "deskNumber": "2号桌",
+        "peopleNumber": 2,
+        "remark": "无备注",
+        "orderNumber": 1809210002,
+        "orderTime": "18/09/21 14:50"
+    },
+    {
+        "deskNumber": "3号桌",
+        "peopleNumber": 3,
+        "remark": "无备注",
+        "orderNumber": 1809210003,
+        "orderTime": "18/09/21 15:30"
+    }, 
+    {
+        "deskNumber": "4号桌",
+        "peopleNumber": 4,
+        "remark": "无备注",
+        "orderNumber": 1809210004,
+        "orderTime": "18/09/21 15:30"
+    }
+]

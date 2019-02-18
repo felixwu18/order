@@ -1,0 +1,191 @@
+[{
+  "id":"hotFood",
+  "foodContent":"热菜",
+   "foodDetail":[{
+      "data-original":"../img/hszz.jpg",
+               "alt":"红烧肘子",
+          "foodName":"红烧肘子",
+          "discount":"优惠折扣",
+             "price":999
+     },
+
+     {
+       "data-original":"../img/hsr.png",
+                 "alt":"碗装红烧肉",
+            "foodName":"碗装红烧肉",
+            "discount":"优惠折扣",
+               "price":666
+     },
+
+     {
+       "data-original":"../img/茶树菇蹄花.jpg",
+                 "alt":"茶树菇蹄花",
+            "foodName":"茶树菇蹄花",
+            "discount":"优惠折扣",
+               "price":888
+     },
+
+     {
+       "data-original":"../img/四川腊肉.jpg",
+                 "alt":"四川腊肉",
+            "foodName":"四川腊肉",
+            "discount":"优惠折扣",
+               "price":999
+     },
+
+     {
+       "data-original":"../img/鲜松茸烧辽参.jpg",
+                 "alt":"鲜松茸烧辽参",
+            "foodName":"鲜松茸烧辽参",
+            "discount":"优惠折扣",
+               "price":999
+      },
+
+     {
+       "data-original":"../img/龙虾.jpg",
+                 "alt":"龙虾",
+            "foodName":"龙虾",
+            "discount":"优惠折扣",
+               "price":888
+      }
+    ]
+   },
+
+   {
+     "id":"coldFood",
+     "foodContent":"冷菜",
+     "foodDetail":[{
+       "data-original":"../img/柠檬泡椒凤爪.jpg",
+                 "alt":"柠檬泡椒凤爪",
+            "foodName":"柠檬泡椒凤爪",
+            "discount":"优惠折扣",
+               "price":666
+       },
+
+       {
+         "data-original":"../img/白切鸡.jpg",
+                   "alt":"白切鸡",
+              "foodName":"白切鸡",
+              "discount":"优惠折扣",
+                 "price":888
+       },
+
+       {
+         "data-original":"../img/川府口水鸡.jpg",
+                   "alt":"川府口水鸡",
+              "foodName":"川府口水鸡",
+              "discount":"优惠折扣",
+                 "price":666
+       },
+
+       {
+         "data-original":"../img/爽口黑木耳.jpg",
+                   "alt":"爽口黑木耳",
+              "foodName":"爽口黑木耳",
+              "discount":"优惠折扣",
+                 "price":999
+       },
+
+       {
+         "data-original":"../img/红油皮蛋.jpg",
+                   "alt":"红油皮蛋",
+              "foodName":"红油皮蛋",
+              "discount":"优惠折扣",
+                 "price":666
+       },
+
+       {
+         "data-original":"../img/玉兰日本豆腐.jpg",
+                   "alt":"玉兰日本豆腐",
+              "foodName":"玉兰日本豆腐",
+              "discount":"优惠折扣",
+                 "price":666
+       },
+
+       {
+         "data-original":"../img/南瓜饼.jpg",
+                   "alt":"南瓜饼",
+              "foodName":"南瓜饼",
+              "discount":"优惠折扣",
+                 "price":888
+       },
+
+       {
+         "data-original":"../img/蒜泥黄瓜.jpg",
+                   "alt":"蒜泥黄瓜",
+              "foodName":"蒜泥黄瓜",
+              "discount":"优惠折扣",
+                 "price":999
+       }
+     ]
+   },
+
+  {
+    "id":"drinks",
+    "foodContent":"酒水",
+    "foodDetail":[{
+      "data-original":"../img/红酒.jpg",
+                "alt":"红酒",
+           "foodName":"红酒",
+           "discount":"优惠折扣",
+              "price":1280
+      },
+
+      {
+        "data-original":"../img/橙子果汁.jpg",
+                  "alt":"橙子果汁",
+             "foodName":"橙子果汁",
+             "discount":"优惠折扣",
+                "price":999
+      },
+
+      {
+        "data-original":"../img/西瓜汁.jpg",
+                  "alt":"西瓜汁",
+             "foodName":"西瓜汁",
+             "discount":"优惠折扣",
+                "price":666
+      },
+
+      {
+        "data-original":"../img/咖啡.jpg",
+                  "alt":"咖啡",
+             "foodName":"咖啡",
+             "discount":"优惠折扣",
+                "price":999
+      },
+
+      {
+        "data-original":"../img/啤酒.jpg",
+                  "alt":"啤酒",
+             "foodName":"啤酒",
+             "discount":"优惠折扣",
+                "price":666
+      },
+
+      {
+        "data-original":"../img/鸡尾酒.jpg",
+                  "alt":"鸡尾酒",
+             "foodName":"鸡尾酒",
+             "discount":"优惠折扣",
+                "price":999
+      },
+
+      {
+        "data-original":"../img/猕猴桃果汁.jpg",
+                  "alt":"猕猴桃果汁",
+             "foodName":"猕猴桃果汁",
+             "discount":"优惠折扣",
+                "price":888
+      },
+
+      {
+        "data-original":"../img/柠檬汁.jpg",
+                  "alt":"柠檬汁",
+             "foodName":"柠檬汁",
+             "discount":"优惠折扣",
+                "price":999
+      }
+    ]
+  }
+]

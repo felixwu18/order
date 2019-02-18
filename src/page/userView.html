@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单后台系统</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!--头部-->
+    <header class="publicHeader">
+        <h1>订单后台管理系统</h1>
+        <div class="publicHeaderR">
+            <p><span id="hours"></span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
+            <a href="../index.html">退出</a>
+        </div>
+    </header>
+    <!--时间-->
+    <section class="publicTime">
+        <span id="time">2018年9月27日 11:11 星期四</span>
+    </section>
+    <!--主体内容-->
+    <section class="publicMian ">
+        <div class="left" style="display:block
+        ">
+            <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+            <nav>
+                <ul class="list">
+                    <li><a href="#">订单管理</a></li>
+                    <li><a href="#">历史订单</a></li>
+                    <li id="active"><a href="#">用户管理</a></li>
+                    <li><a href="#">密码修改</a></li>
+                    <li><a href="../index.html">退出系统</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="location">
+                <p>你现在所在的位置是:</p>
+                <span>用户管理页面 >> 用户信息查看页面</span>
+            </div>
+            <div class="userView">
+                <p>用户编号：<span>003</span></p>
+                <p>用户名称：<span>吴金豹</span></p>
+                <p>用户性别：<span>男</span></p>
+                <p>出生日期：<span>1993年3月11日</span></p>
+                <p>用户电话：<span>15376543210</span></p>
+                <p>用户地址：<span>福建</span></p>
+                <p>用户类别：<span>店员</span></p>
+                <a href="orderManage.html">返回</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+    <script src="../js/time.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ch-hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>小票打印</title>
+  <link rel="stylesheet" href="../css/orderPrint.css">
+  <script type="text/javascript" src="../public/jquery.min.js"></script>
+  <script type="text/javascript" src="../public/jquery.qrcode.min.js"></script>
+  <script language="javascript" src="../public/jquery.print.js"></script>
+</head>
+<body style="background-color:#fff;">
+    <div class="print_container">
+      <div class="print_container" id='printSection'>
+        <h1>订单详情</h1>
+        <span>**************************</span>
+        <div class="section1">
+            <h3>御膳房</h3>
+            <h3>桌号：<span class="tableIndex"></span>号桌</h3>
+            <h3>人数：3</h3>
+        </div>
+        <span>**************************</span>
+        <div class="section2">
+            <label>订单备注：1111</label>
+            <label style="margin-bottom:.5em;">扫码点餐:</label>
+            <span id="code"></span>
+        </div>
+        <span>**************************</span>
+        <div class="section3">
+            <label>订单编号：<span class="orderIndex"></span></label>
+            <label>下单时间：<span class="orderTime"></span></label>
+        </div>
+        <span>**************************</span>
+        <div class="section4">
+            <div style="border-bottom: 1px solid #DADADA;">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td width="60%">菜单名称</td>
+                            <td width="20%">数量</td>
+                            <td width="20%">金额</td>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <!-- <tr>
+                            <td>米饭</td>
+                            <td>2</td>
+                            <td>28.00</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="other_fee">
+              <div class="canh">
+                  <label class="left">米饭</label>
+                  <label class="right">0</label>
+                  <div class="clearfix"></div>
+              </div>
+
+                <div class="canh">
+                    <label class="left">餐盒费</label>
+                    <label class="right">0</label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="peis">
+                    <label class="left">配送费</label>
+                    <label class="right">0</label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="manj">
+                    <label class="left">立减优惠</label>
+                    <label class="right">0</label>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="total">
+                <label class="left">总计</label>
+                <label class="right totalFee">39</label>
+                <div class="clearfix"></div>
+            </div>
+            <div style="text-align: right;">
+                <label>顾客已付款</label>
+            </div>
+            <span>**************************</span>
+        </div>
+        <div class="section5">
+            <label>姓名：小明</label>
+            <label>地址：成都</label>
+            <label>电话：123456</label>
+        </div>
+        <span>**************************</span>
+        </div>
+        <div class="printBtn">
+          <button onclick="javascript:print()">打印</button>
+          <button onclick="lookOrderLog()">查看订单</button>
+        </div>
+    </div>
+<script src="../js/orderPrint.js"></script>
+</body>
+</html>
+</body>
+
+</html>

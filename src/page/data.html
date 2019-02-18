@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单后台管理系统</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../public/echarts.min.js"></script>
+    <style>
+        #main{
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <header class="publicHeader">
+        <h1>订单后台管理系统</h1>
+        <div class="publicHeaderR">
+            <p><span id="hours"></span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
+            <a href="login.html">退出</a>
+        </div>
+    </header>
+    <!--时间-->
+    <section class="publicTime">
+        <span id="time">2018年9月27日 11:11 星期四</span>
+    </section>
+    <!--主体内容-->
+    <section class="publicMian ">
+        <div class="left" style="display:block">
+            <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+            <nav>
+                <ul class="list">
+                    <li><a href="#">订单管理</a></li>
+                    <li><a href="#">历史订单</a></li>
+                    <li id="active"><a href="#">用户管理</a></li>
+                    <li><a href="#">密码修改</a></li>
+                    <li><a href="login.html">退出系统</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="location">
+                <strong>你现在所在的位置是:</strong>
+                <span>历史订单 >> 销售统计</span>
+            </div>
+            <div id="main" style="width: 600px;height:400px;"></div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+    <script src="../js/time.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '御膳房周销售',
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['销售金额', '销售单数']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    dataView: {
+                        show: true,
+                        readOnly: false
+                    },
+                    magicType: {
+                        show: true,
+                        type: ['line', 'bar']
+                    },
+                    restore: {
+                        show: true
+                    },
+                    saveAsImage: {
+                        show: true
+                    }
+                }
+            },
+            calculable: true,
+            xAxis: [{
+                type: 'category',
+                data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+            }],
+            yAxis: [{
+                type: 'value'
+            }],
+            series: [{
+                    name: '销售金额',
+                    type: 'bar',
+                    data: [12697, 16765, 18934, 29643, 16892, 68425, 54836],
+                    markPoint: {
+                        data: [{
+                                type: 'max',
+                                name: '最大值'
+                            },
+                            {
+                                type: 'min',
+                                name: '最小值'
+                            }
+                        ]
+                    },
+                    markLine: {
+                        data: [{
+                            type: 'average',
+                            name: '平均值'
+                        }]
+                    }
+                },
+                {
+                    name: '销售单数',
+                    type: 'bar',
+                    data: [29, 24, 16, 26, 52, 56, 63],
+                    markPoint: {
+                        data: [{
+                                name: '周最高'
+                            },
+                            {
+                                name: '周最低',
+                            }
+                        ]
+                    },
+                    markLine: {
+                        data: [{
+                            type: 'average',
+                            name: '平均值'
+                        }]
+                    }
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

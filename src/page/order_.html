@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <title>点餐页面</title>
+  <link rel="shortcut icon" href="../img/logo.png">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../public/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/order.css">
+  <script src="../public/jquery.min.js"></script>
+  <script src="../public/jquery.lazyload.min.js"></script>
+  <script src="../public/bootstrap.min.js"></script>
+</head>
+
+<body >
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-default">
+        <div class="col-lg-4">
+          <a class="navbar-brand" href="primary.html">&lt; 返回</a>
+        </div>
+        <div class="col-lg-4">
+          <a class="navbar-brand yushanhouse" href="javascript:;">
+            <!-- <img src="../img/logo.png" alt=""> -->
+            <span>御膳房</span>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a class="navbar-brand sumMoney" href="javascript:;">总金额 : <span class="orderSumFee">0</span>元</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="topBarStyle row"></div>
+    <div class="row">
+      <div class="sideBarLeft">
+        <a href="#" class="list-group-item">热菜</a>
+        <a href="#coldFood" class="list-group-item">冷菜</a>
+        <a href="#drinks" class="list-group-item">酒水茶饮</a>
+      </div>
+      <!-- <div class="col-lg-2  col-md-2 col-sm-2  col-xm-2" style="height:20em;"></div> -->
+      <div class="col-lg-10  col-md-10 col-sm-10 col-xm-10 sideBarRight clearfix">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+          <label style="margin-left:10%;font-size:1.5em;">桌号:</label>
+          <select class="tableIndex" onfocus='bgColorToggle(this)' onblur='bgColorRemove(this)'>
+             <option value="">1</option>
+             <option value="">2</option>
+             <option value="">3</option>
+             <option value="">5</option>
+             <option value="">6</option>
+           </select>
+          </div>
+          <div class="col-lg-6 col-md-6 search">
+            <input class="input" placeholder="请输入(菜名字样)..." type="text" onfocus='bgColorToggle(this)' onblur='bgColorRemove(this)'>
+            <button class="searchBtn" style="margin-left:1%;width:4.5em">搜索</button>
+          </div>
+        </div>
+        <!-- 搜索的内容放这 -->
+        <div class="searchPanel" style="padding-top:2em;"></div>
+        <!-- 包裹三类菜品 -->
+        <div class="foodContainer">
+
+          <!-- 菜品放置区域(js加载数据渲染页面区域) -->
+
+       </div>
+    </div>
+  </div>
+  <!-- 隐藏要现实的弹框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <!-- 弹框样式,居中及大小 -->
+ <div class="modal-dialog" role="document">
+   <!-- 模态框的外框背景 -->
+   <div class="modal-content">
+     <!-- 对模态框的大小有一点影响 -->
+     <div class="modal-body">
+     <!-- 影响不大 -->
+         <div class="card">
+           <!-- 卡片头部样式 -->
+           <div class="card-header" role="tab" id="headingOne">
+             <h4 class="mb-0">
+                 <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   订单确认
+                 </a>
+               </h4>
+           </div>
+           <!-- 卡片体,影响不太大 -->
+             <div class="card-body">
+               <h4>桌号:&nbsp;<span class="tableIndex"></span></h4>
+               <table border="1" cellspacing='0' cellpadding='10'>
+                 <thead>
+                   <tr>
+                     <th>菜名</th>
+                     <th>单价(元/份)</th>
+                     <th>数量(份)</th>
+                     <th>订单时间</th>
+                     <th>备注</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <!-- 订单渲染,客户确认 -->
+                 </tbody>
+               </table>
+               <h4>总计: <span class="total">0</span>元</h4>
+             </div>
+         </div>
+     </div>
+     <!-- 影响卡片脚样式(并排列) -->
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-dismiss="modal">返回</button>
+       <button type="button" onclick="orderInfoConfirm()" class="btn btn-primary">确认点餐</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- 模态框的入口 -->
+<a type="button" onclick="orderInfoGenerate()" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+   点餐提交
+</a>
+<script src="../js/order_Painting.js"></script>
+<script src="../js/order.js"></script>
+</body>
+</html>
